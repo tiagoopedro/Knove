@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor0: #023138;
+    --cor1: #FEF9A5;
+    --cor2: #BCA15D;
+    --cor3: #C58C33;
+    --cor4: #F5EDE1;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--cor0);
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    color: var(--cor0);
+    overflow-x: hidden;
+}
+
+p,
+li {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.4em;
+}
+
+h1,
+h2 {
+    text-indent: 30px;
+    padding: 30px 0 30px 30px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+#fundo-quem-somos {
+    width: 100vw;
+    background-color: #09372D;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#quem-somos {
+    max-width: 1280px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+
+#quem-somos>h1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 40px 0 0px 30px;
+    color: var(--cor2);
+    border-bottom: 3px solid var(--cor2);
+    min-width: 280px;
+
+}
+
+.p-quem-somos {
+    color: var(--cor2);
+    font-size: 20px;
+}
+
+#div1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0;
+}
+
+#div1>img {
+    display: none;
+}
+
+#div1>#logo-quem-somos {
+    display: block;
+    box-shadow: none;
+    margin-top: 40px;
+    width: 300px;
+    height: 200px;
+}
+
+#div1>p {
+    padding: 20px 40px 10px;
+}
+
+#div2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#div2>img {
+    display: none;
+
+}
+
+#div2>p {
+    padding: 10px 40px 40px;
+}
+
+
+#h1-servicos-disposicao {
+    border-bottom: 2px solid var(--cor0);
+    padding: 30px 0 0 0;
+    margin-top: 30px;
+    width: 380px;
+    font-size: 26px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.swiper {
+    /*section*/
+    width: 90vw;
+    padding: 30px 30px 30px 15px;
+    overflow: hidden;
+}
+
+.servicos-disposicao {
+    /*conteudo servicos a disposicao*/
+    font-size: 18px;
+    background-color: #38776981;
+    height: auto;
+    border-radius: 40px;
+    padding: 10px 0;
+    margin: 0px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
+    cursor: grab;
+}
+
+.servicos-disposicao:active {
+    cursor: grabbing;
+}
+
+.servicos-disposicao>h3 {
+    padding: 20px 20px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.servicos-disposicao>li {
+    text-indent: 20px;
+    padding: 0 20px 10px;
+    text-align: justify;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-2040px);
+    }
+}
+
+#clientes {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+
+}
+
+#clientes h1 {
+    border-bottom: 2px solid var(--cor0);
+    padding: 30px 0 0 0;
+    margin-top: 40px;
+    width: 380px;
+    font-size: 26px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#clientes li {
+    list-style: none;
+}
+
+#logos {
+    max-width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#logos ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    animation: 20s infinite slide linear;
+}
+
+#logos img {
+    width: 120px;
+    margin: 20px;
+}
+
+

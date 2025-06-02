@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+#nosso-time {
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 50px 0 0px 0px;
+    background-image: url(../imagens/fundos/fundo-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+#nosso-time>h1 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 30px 10px 0;
+    margin-bottom: 50px;
+    text-indent: 0;
+    border-bottom: 5px outset rgb(226, 230, 30);
+}
+
+#nosso-time>h1,
+h2,
+p {
+    color: white;
+}
+
+.perfil {
+    display: flex;
+    flex-flow: column wrap;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.perfil>h2 {
+    text-indent: 0;
+    margin: auto;
+}
+
+.perfil>img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.perfil:hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #738754, rgba(255, 255, 255, 0));
+    height: fit-content;
+}
+
+.perfil>img:hover {
+    border: 3px solid white;
+    border-radius: 120px;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    transition: transform 2.0s, border 0.2s;
+    cursor: pointer;
+    height: 240px;
+    width: 240px;
+}
+
+#descricao,
+#d2,
+#d3 {
+    display: none;
+    color: white;
+}
+
+
+
+footer {
+    margin: 150px 0 80px;
+    background: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100vw;
+}
+
+#logo-footer {
+    width: 300px;
+    padding: 10px;
+}
+
+footer>a {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px;
+    padding: 10px 20px;
+}
+
+footer>a>p {
+    color: white;
+}
+
+footer>a>img {
+    height: 30px;
+    width: 30px;
+    padding: 0px 3px;
+}
+
+.contato,
+.rede-social {
+    text-indent: 0px;
+    padding: 5px 0px;
+    color: white;
+}
+
+footer>div {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 10px 20px 0;
+    padding: 0 0 0 25px;
+}
+
+#img-telefone {
+    margin-right: 5px;
+    height: 25px;
+}
+
+#p-telefone {
+    text-indent: 30px;
+
+}
+
+.contato:hover {
+    filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
+}
+
+footer>a:hover {
+    filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
+}
+
+#Copyright {
+    text-align: center;
+    width: auto;
+    padding: 0;
+    text-indent: 0;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+}

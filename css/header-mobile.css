@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+header>img {
+    display: none;
+}
+
+header>#itens {
+    display: none;
+}
+
+.swiper-historico {
+    display: none;
+}
+
+header>#itens>a {
+    
+    color: #023138;
+    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.027);
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 15px;
+    padding: 12px;
+    transition-duration: 0.3s;
+    font-family: "Raleway", sans-serif;
+
+}
+
+#itens>a:hover {
+    background-color: var(--cor0);
+    color: var(--cor2);
+    border-radius: 10px;
+}
+
+
+.swiper-mobile {
+    width: 100vw;
+}
+
+.burguer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 100px;
+    width: 80%;
+    max-width: 320px;
+    text-align: center;
+    font-size: 18px;
+    background-image: url(../imagens/fundos/fundo-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    color: #fff;
+}
+
+.content {
+    width: 100%;
+}
+
+.menu-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 6px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.027);
+
+}
+
+.menu-button .bar:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+.menu-button .bar:nth-of-type(3) {
+    margin-bottom: 0px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 3px;
+    margin: 8px auto;
+    background-color: #09372D;
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.menu-button:hover .bar:nth-of-type(1) {
+    -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+    -ms-transform: translateY(1.5px) rotate(-4.5deg);
+    transform: translateY(1.5px) rotate(-4.5deg);
+}
+
+.menu-button:hover .bar:nth-of-type(2) {
+    opacity: 0.9;
+}
+
+.menu-button:hover .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+    -ms-transform: translateY(-1.5px) rotate(4.5deg);
+    transform: translateY(-1.5px) rotate(4.5deg);
+}
+
+.cross .bar:nth-of-type(1) {
+    -webkit-transform: translateY(15px) rotate(-45deg);
+    -ms-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
+}
+
+.cross .bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.cross .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-15px) rotate(45deg);
+    -ms-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
+}
+
+.cross:hover .bar:nth-of-type(1) {
+    -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+    -ms-transform: translateY(13.5px) rotate(-40.5deg);
+    transform: translateY(13.5px) rotate(-40.5deg);
+}
+
+.cross:hover .bar:nth-of-type(2) {
+    opacity: 0.1;
+}
+
+.cross:hover .bar:nth-of-type(3) {
+    -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+    -ms-transform: translateY(-13.5px) rotate(40.5deg);
+    transform: translateY(-13.5px) rotate(40.5deg);
+}
+
+nav {
+    margin: 90px auto 0px;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px;
+    color: #023138;
+}
+
+nav>a {
+    margin: 5px 0;
+    text-decoration: none;
+    width: 90%;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 15px;
+    padding: 12px 40px;
+    transition-duration: 0.3s;
+    color: white;
+    transition-duration: 0.3s;
+    font-family: "Raleway", sans-serif;
+}
+
+nav>a:hover {
+    background-color: #BCA15D;
+    border-radius: 10px;
+}
+
+
+#logo-header {
+    width: 240px;
+    height: 45px;
+    padding: 5px 10px;
+}
+
+#div-logo-header {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+
+
+
+.swiper-mobile {
+    width: 100%;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slide-mobile {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../imagens/fundos/fundo-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-mobile>h1 {
+    min-width: 350px;
+    padding: 30px 0 10px;
+    text-indent: 0;
+    color: white;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+}
+
+.slide-mobile>h3 {
+    color: white;
+    text-indent: 30px;
+    width: 350px;
+    text-align: justify;
+    margin: 10px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 18px;
+}
+
+.slide-mobile>p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-indent: 0;
+}
+
+.img-slide-mobile {
+    width: 350px;
+    height: 393px;
+    border-radius: 8px;
+}
+
+#img-reforma-fachada-depois {
+    height: 380px;
+    margin-bottom: 10px;
+}
+
+.projeto-img {
+    width: 350px;
+    height: 426px;
+}
+
+.img-autocad {
+    width: 350px;
+    height: 369px;
+    border-radius: 8px;
+}
+
+#slide-mobile-capa {
+    background-image: url(../imagens/historico\ servico/capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#slide-mobile-capa>h1 {
+    color: white;
+    padding: 30px 0 5px;
+    text-indent: 0px;
+    margin: 5px 0px 0px;
+    min-width: 360px;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+}
+
+#slide-mobile-capa>div>p {
+    text-indent: 30px;
+    text-align: justify;
+    width: 350px;
+    font-weight: 550;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#img-logo-capa-mobile {
+    width: 350px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
