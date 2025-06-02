@@ -6,11 +6,9 @@
 
 
 :root {
-    --cor0: #023138;
-    --cor1: #FEF9A5;
-    --cor2: #BCA15D;
-    --cor3: #C58C33;
-    --cor4: #F5EDE1;
+    --cor0: #FDB92E;
+    --cor1: #C73539;
+    --cor2: #A8ADB1;
 
 }
 
@@ -55,7 +53,7 @@ a {
 
 #fundo-quem-somos {
     width: 100vw;
-    background-color: #09372D;
+    background-color: #852d1e;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -102,8 +100,9 @@ a {
     display: block;
     box-shadow: none;
     margin-top: 40px;
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 492px;
+    border-radius: 20px;
 }
 
 #div1>p {
