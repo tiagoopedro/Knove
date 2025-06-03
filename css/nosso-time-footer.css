@@ -6,11 +6,11 @@
     flex-flow: column wrap;
     align-items: center;
     margin: 50px 0 0px 0px;
-    background-image: url(../imagens/fundos/fundo-footer.jpg);
+    background-image: url(../imagens/fundos/IMG_20210914_144132-scaled.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: left;
+    background-position: top;
 }
 
 #nosso-time>h1 {

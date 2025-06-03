@@ -24,7 +24,7 @@ header>#itens {
 }
 
 header>#itens>a {
-    
+
     color: #023138;
     display: block;
     display: flex;
@@ -71,7 +71,7 @@ header>#itens>a {
     max-width: 320px;
     text-align: center;
     font-size: 18px;
-    background-color: var(--cor0);
+    background-color: #852d1e;
     color: #fff;
 }
 
@@ -184,14 +184,14 @@ nav>a {
 }
 
 nav>a:hover {
-    background-color: var(--cor1);
+    background-color: var(--cor0);
     border-radius: 10px;
 }
 
 
 #logo-header {
-    width: 240px;
-    height: 45px;
+    height: 62px;
+    width: 187px;
     padding: 5px 10px;
 }
 
@@ -218,7 +218,7 @@ nav>a:hover {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-   background-color: var(--cor0);
+    background-color: var(--cor0);
 }
 
 .slide-mobile>h1 {
@@ -256,5 +256,3 @@ nav>a:hover {
     height: 393px;
     border-radius: 8px;
 }
-
-

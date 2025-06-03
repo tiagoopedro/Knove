@@ -90,10 +90,9 @@
         transition: opacity 1s ease;
     }
 
-
     .posicao-slider {
-        position: relative;
-        top: 71px;
+        margin-top: 82px;
+        position: static;
     }
 
     nav {
@@ -447,8 +446,8 @@
     }
 
     .posicao-slider {
-        position: relative;
-        top: 71px;
+        margin-top: 82px;
+        position: static;
     }
 
     nav {
@@ -460,8 +459,8 @@
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
-        height: 50px;
-        width: 260px;
+        height: 62px;
+        width: 187px;
         margin-right: 10px;
         margin-left: 10vw;
         border: none;
@@ -490,13 +489,18 @@
         padding: 10px;
         margin-right: 5px;
         transition-duration: 0.5s;
+        color: var(--cor1);
+    }
+
+    #itens>a:hover {
+        color: white;
     }
 
 
 
     .swiper-historico {
         width: 100vw;
-        height: 1010px;
+        height: 800px;
         display: block;
     }
 
@@ -504,125 +508,40 @@
         cursor: grabbing;
     }
 
-    #slide-capa {
-        background-image: url(../imagens/historico\ servico/capa.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        color: white;
-        align-items: flex-start;
-    }
-
-    #slide-capa>h1 {
-        margin-top: 50px;
-        width: 500px;
-        font-size: 48px;
-    }
-
-    .p-historico {
-        color: white;
-        text-indent: 30px;
-        text-align: justify;
-        max-width: 700px;
-        font-weight: bold;
-        font-size: 28px;
-        margin-left: 50px;
-        padding: 20px;
-
-    }
 
     .div-slide-historico {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center;
         color: white;
-        background-image: url(../imagens/fundos/fundo-serviços.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
+        background-image: url(../imagens/background/11.jpg);
     }
 
-    .div-slide-historico>h1 {
-        color: white;
-        font-size: 34px;
-        padding-bottom: 10px;
-    }
-
-    .div-slide-historico>h3 {
-        max-width: 1280px;
-        text-indent: 30px;
-        text-align: justify;
-        margin-bottom: 0;
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 1.4em;
-        font-size: 20px;
-    }
-
-    .div-slide-historico>p {
-        color: white;
-    }
 
     .div-img-historico {
-        max-width: 1400px;
-        margin-top: 20px;
-        display: flex;
-        flex-flow: row nowrap;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 10px;
     }
 
-    .div-img-historico>p {
-        color: white;
-        display: flex;
-        justify-content: flex-end;
-        font-size: 16px;
-        font-weight: 300;
-    }
 
-    .img-historico {
-        display: flex;
-        width: 680px;
-        height: 550px;
-        margin: 0 10px 5px;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
-        border-radius: 8px;
-    }
 
-    .img-projeto {
-        width: 800px;
-        height: 550px;
-    }
-
-    #legendas {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        max-width: 1320px;
-    }
-
-    #legendas>p {
-        color: white;
-        text-indent: 10px;
-        width: 375px;
-        margin: 0 10px 5px;
-        font-size: 14px;
-
-    }
 
 
 
     #fundo-quem-somos {
-        background: linear-gradient(to right, #a8adb188, var(--cor0), var(--cor0), #a8adb188 );
+       background-image: url(../imagens/background/13.jpg);
+       background-position: top;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+
+        /* background: linear-gradient(to bottom, white, var(--cor2), var(--cor2), white); */
+
     }
 
     #quem-somos {
         flex-flow: row wrap;
         padding: 30px 0 150px;
+
     }
 
     #quem-somos>h1 {
@@ -635,6 +554,7 @@
 
     .p-quem-somos {
         font-size: 22px;
+        color: var(--cor1);
     }
 
     #div1 {
@@ -730,8 +650,8 @@
         justify-content: center;
         align-items: flex-start;
         padding: 30px;
-        background-position: right;
-        /*escolher entre left e right*/
+        background-image: url(../imagens/background/9.jpg);
+        background-position: top;
     }
 
     #nosso-time>h1 {
