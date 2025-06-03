@@ -618,14 +618,14 @@
         /*conteudo servicos a disposicao*/
         margin: auto;
         font-size: 18px;
-        height: 75%;
+        height: 80%;
         padding: 10px 0;
     }
 
     .servicos-disposicao>img{
-        margin: 0 2%;
+        margin: 2% 2.5%;
         width: 95%;
-        height: 70%;
+        height: 78%;
         border-radius: 20px;
     }
 
