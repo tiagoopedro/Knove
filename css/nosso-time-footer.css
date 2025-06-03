@@ -131,11 +131,13 @@ footer>div {
 }
 
 .contato:hover {
-    filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(28%) sepia(60%) saturate(2024%) hue-rotate(333deg) brightness(89%) contrast(94%)
+;
 }
 
 footer>a:hover {
-    filter: invert(54%) sepia(15%) saturate(1787%) hue-rotate(357deg) brightness(104%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(28%) sepia(60%) saturate(2024%) hue-rotate(333deg) brightness(89%) contrast(94%)
+;
 }
 
 #Copyright {

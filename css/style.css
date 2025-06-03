@@ -147,7 +147,7 @@ a {
 .servicos-disposicao {
     /*conteudo servicos a disposicao*/
     font-size: 18px;
-    background-color: #38776981;
+    background-color: var(--cor0);
     height: auto;
     border-radius: 40px;
     padding: 10px 0;
@@ -160,6 +160,13 @@ a {
     cursor: grabbing;
 }
 
+  .servicos-disposicao>img{
+        margin: 1% 2%;
+        width: 95%;
+        height: 70%;
+        border-radius: 20px;
+    }
+
 .servicos-disposicao>h3 {
     padding: 20px 20px;
     text-align: center;
@@ -167,12 +174,14 @@ a {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    color: var(--cor1);
 }
 
 .servicos-disposicao>li {
     text-indent: 20px;
     padding: 0 20px 10px;
     text-align: justify;
+    color: var(--cor1);
 }
 
 .swiper-button-next,

@@ -40,7 +40,7 @@ var swiper = new Swiper(".mySwiper-slide-mobile", {
 function numeroSlide() {
   if (window.innerWidth >= 2000) {
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -54,20 +54,6 @@ function numeroSlide() {
   }
   else if (window.innerWidth >= 992) {
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 40,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
-  }
-  else if (window.innerWidth >= 768) {
-    var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 40,
       navigation: {
@@ -80,6 +66,20 @@ function numeroSlide() {
       },
     })
   }
+ /* else if (window.innerWidth >= 768) {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+  } */
   else {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
