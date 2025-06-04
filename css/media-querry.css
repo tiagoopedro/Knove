@@ -528,13 +528,13 @@
 
 
     #fundo-quem-somos {
-       background-image: url(../imagens/background/13.jpg);
+        /* background-image: url(../imagens/background/13.jpg);
        background-position: top;
        background-size: cover;
        background-repeat: no-repeat;
-       background-attachment: fixed;
+       background-attachment: fixed;*/
 
-        /* background: linear-gradient(to bottom, white, var(--cor2), var(--cor2), white); */
+        background: linear-gradient(to bottom, white, var(--cor2), var(--cor2), white);
 
     }
 
@@ -597,6 +597,86 @@
         margin-top: 0;
     }
 
+    #knove-servicos {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #knove-servicos>h1{
+        width: 1000px;
+        color: black;
+        text-align: center;
+    }
+
+    #knove-servicos>h3 {
+        width: 1000px;
+        text-indent: 30px;
+        text-align: justify;
+    }
+    
+
+    #topicos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    #topicos>div {
+        width: 500px;
+    }
+
+    #topicos>div>p {
+        color: var(--cor1);
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    #topicos>div>img {
+        background-color:var(--cor0);
+        padding: 10px;
+        border: solid 2px var(--cor1);
+        border-radius: 45px;
+    }
+
+    #seguranca {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #icones,
+    #texto {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    #icones>div {
+        margin: 10px;
+    }
+
+    #texto>div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 10px;
+        padding: 40px 10px;
+        background-color: #E62F24;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
+        border-radius: 5px;
+    }
+
+    #texto>div>h3 {
+        margin: 10px;
+        color: white;
+    }
+
+
 
 
     #h1-servicos-disposicao {
@@ -622,7 +702,7 @@
         padding: 10px 0;
     }
 
-    .servicos-disposicao>img{
+    .servicos-disposicao>img {
         margin: 2% 2.5%;
         width: 95%;
         height: 78%;
@@ -644,7 +724,9 @@
     #clientes h1 {
         font-size: 30px;
         margin: 0 0 20px 100px;
-        min-width: 420px;
+        min-width: 320px;
+        color: var(--cor1);
+        border-color: var(--cor1);
     }
 
     #logos img {
