@@ -427,7 +427,6 @@
 
 @media screen and (min-width: 1400px) {
 
-
     .swiper-mobile {
         display: none;
     }
@@ -602,20 +601,22 @@
         flex-flow: column;
         justify-content: center;
         align-items: center;
+        margin: 100px auto 0;
     }
 
-    #knove-servicos>h1{
+    #knove-servicos>h1 {
         width: 1000px;
-        color: black;
+        color: var(--cor1);
         text-align: center;
     }
 
     #knove-servicos>h3 {
+        color: var(--cor1);
         width: 1000px;
         text-indent: 30px;
         text-align: justify;
     }
-    
+
 
     #topicos {
         display: flex;
@@ -623,20 +624,28 @@
         justify-content: center;
         align-items: center;
         margin: 50px 0;
+        max-width: 1500px;
     }
 
     #topicos>div {
         width: 500px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
     }
 
     #topicos>div>p {
         color: var(--cor1);
         font-weight: bold;
         font-size: 1.3em;
+        width: 250px;
+        padding: 0;
     }
 
     #topicos>div>img {
-        background-color:var(--cor0);
+        background-color: var(--cor0);
         padding: 10px;
         border: solid 2px var(--cor1);
         border-radius: 45px;
@@ -644,20 +653,26 @@
 
     #seguranca {
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: center;
+        flex-flow: column;
+        margin: 100px auto;
     }
 
     #icones,
     #texto {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
+        margin: 20px auto;
     }
 
     #icones>div {
-        margin: 10px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;  
+        margin: 0 170px;  /*continuar aqui*/
+    }
+
+    #icones>div>h1 {
+        padding: 0;
+        text-indent: 0;
     }
 
     #texto>div {
@@ -665,6 +680,7 @@
         flex-flow: column;
         align-items: center;
         margin: 10px;
+        max-width: 500px;
         padding: 40px 10px;
         background-color: #E62F24;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
@@ -718,7 +734,6 @@
     .swiper-button-prev {
         display: block;
     }
-
 
 
     #clientes h1 {
