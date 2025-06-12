@@ -16,97 +16,42 @@ var swiper = new Swiper(".mySwiper-slide-historico", {
   },
 });
 
-//slide loja 
+
+
 function slideLoja() {
-    if (window.innerWidth >= 2000) {
-      var swiper = new Swiper(".mySwiper-slide-loja", {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-           autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      })
-    }
-    else if (window.innerWidth >= 1900) {
-      var swiper = new Swiper(".mySwiper-slide-loja", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-          autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      })
-    }
-    else if (window.innerWidth >= 1500) {
-      var swiper = new Swiper(".mySwiper-slide-loja", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-          autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      })
-    }
 
-     else if (window.innerWidth >= 992) {
-        var swiper = new Swiper(".mySwiper-slide-loja", {
-         slidesPerView: 2,
-         spaceBetween: 30,
-         navigation: {
-           nextEl: ".swiper-button-next",
-           prevEl: ".swiper-button-prev",
-         },
-         pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-         },
-       })
-     } 
+function padraoSlideLoja(numerodeSlides) {
+  var swiper = new Swiper(".mySwiper-slide-loja", {
+    slidesPerView: numerodeSlides,
+    spaceBetween: 40,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  })
+}
 
-    else {
-      var swiper = new Swiper(".mySwiper-slide-loja", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      })
-    }
+  if (window.innerWidth >= 2000) {
+    padraoSlideLoja(5)
   }
+  else if (window.innerWidth >= 1900) {
+    padraoSlideLoja(4)
+  }
+  else if (window.innerWidth >= 1500) {
+    padraoSlideLoja(3)
+  }
+
+  else if (window.innerWidth >= 992) {
+    padraoSlideLoja(2)
+  }
+
+  else {
+    padraoSlideLoja(1)
+  }}
   slideLoja();
 
   var swiper = new Swiper(".mySwiper-slide-mobile", {
@@ -128,69 +73,34 @@ function slideLoja() {
   });
 
 
-  function numeroSlide() {
+  function slideServico() {
+
+    function padraoSlideServico(numerodeSlides) {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: numerodeSlides,
+    spaceBetween: 40,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  })
+}
+
     if (window.innerWidth >= 2000) {
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 40,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      })
+      padraoSlideServico(3)
     }
     else if (window.innerWidth >= 992) {
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 40,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      })
+     padraoSlideServico(2)
     }
-    /* else if (window.innerWidth >= 768) {
-       var swiper = new Swiper(".mySwiper", {
-         slidesPerView: 1,
-         spaceBetween: 40,
-         navigation: {
-           nextEl: ".swiper-button-next",
-           prevEl: ".swiper-button-prev",
-         },
-         pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-         },
-       })
-     } */
     else {
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 40,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      })
+     padraoSlideServico(1)
     }
   }
-  numeroSlide()
+  slideServico()
 
 
   var menuButton = document.querySelector('.menu-button');
