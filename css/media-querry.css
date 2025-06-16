@@ -756,7 +756,7 @@
         justify-content: center;
         align-items: flex-start;
         padding: 30px;
-        background-image: url(../imagens/background/14.jpg);
+        background-image: url(../imagens/background/a.jpg);
         background-position: top;
     }
 
@@ -814,17 +814,17 @@
         transition: .8s;
     }
 
-}
+    .mySwiper-slide-loja {
+        display: block;
+        width: 100vw;
+        height: 800px;
+    }
 
-.mySwiper-slide-loja {
-    display: block;
-    width: 100vw;
-    height: 800px;
-}
+    .slide-loja>img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 10px;
+    }
 
-.slide-loja>img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border-radius: 10px;
 }

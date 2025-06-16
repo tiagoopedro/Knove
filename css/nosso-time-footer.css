@@ -101,7 +101,7 @@ footer>a>p {
     color: white;
 }
 
-footer>a>img {
+footer>a>img, footer>div>a>img {
     height: 30px;
     width: 30px;
     padding: 0px 3px;
@@ -111,7 +111,7 @@ footer>a>img {
 .rede-social {
     text-indent: 0px;
     padding: 5px 0px;
-    color: white;
+    color: #C73539;
 }
 
 footer>div {
@@ -132,13 +132,15 @@ footer>div {
 }
 
 .contato:hover {
-    filter: brightness(0) saturate(100%) invert(28%) sepia(60%) saturate(2024%) hue-rotate(333deg) brightness(89%) contrast(94%)
-;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(103%) contrast(103%);
 }
 
-footer>a:hover {
-    filter: brightness(0) saturate(100%) invert(28%) sepia(60%) saturate(2024%) hue-rotate(333deg) brightness(89%) contrast(94%)
-;
+footer>a>p:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(44deg) brightness(103%) contrast(103%);
+
+    /* footer>a:hover { 
+    filter: brightness(0) saturate(100%) invert(28%) sepia(60%) saturate(2024%) hue-rotate(333deg) brightness(89%) contrast(94%); }
+    */
 }
 
 #Copyright {
@@ -146,7 +148,7 @@ footer>a:hover {
     width: auto;
     padding: 0;
     text-indent: 0;
-    color: white;
+    color: #C73539;
     font-size: 14px;
     margin-bottom: 20px;
 }
