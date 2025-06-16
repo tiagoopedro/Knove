@@ -533,7 +533,7 @@
        background-repeat: no-repeat;
        background-attachment: fixed;*/
 
-        background: linear-gradient(to bottom, white, var(--cor2), var(--cor2), white);
+        background: linear-gradient(to bottom, white, var(--cor2),  white);
 
     }
 
@@ -557,8 +557,8 @@
     }
 
     #div1 {
-        flex-flow: row nowrap;
-        margin: 50px 0 100px;
+        flex-flow: row wrap;
+        margin: 50px 0 90px;
     }
 
     #div1>#logo-quem-somos {
@@ -576,25 +576,40 @@
 
     #div1>p {
         padding: 30px 0 0 50px;
-        width: 680px;
+        width: 450px;
     }
 
     #div2 {
+        display: flex;
         flex-flow: row nowrap;
     }
 
-    #div2>img {
-        display: block;
-        height: 533px;
-        width: 300px;
-        border-radius: 80px 0;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    .caixas-equipe {
+        background-color: var(--cor0);
+        border-radius: 20px;
+        border: 2px solid #E62F24;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
+        margin: 10px 80px 10px 0;
+        height: 300px;
     }
 
-    #div2>p {
-        padding: 35px 50px 0 0;
-        margin-top: 0;
+    .caixas-equipe>h1 {
+        padding: 25px 0;
+        text-indent: 0;
+        text-align: center;
+        color: var(--cor1);
     }
+
+    .caixas-equipe>p {
+        color: var(--cor1);
+        width: 450px;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.4em;
+    }
+
+
 
     #knove-servicos {
         display: flex;
@@ -703,6 +718,7 @@
         padding-bottom: 0;
         border-bottom: 2px solid var(--cor0);
         min-width: 410px;
+        
     }
 
     .swiper {
@@ -729,6 +745,10 @@
 
     .servicos-disposicao>h3 {
         padding: 20px 20px;
+        text-align: center;
+    }
+
+    .servicos-disposicao>li {
         text-align: center;
     }
 
@@ -805,6 +825,7 @@
     footer>div {
         margin-bottom: 0;
     }
+
 
     #Copyright {
         margin-bottom: 0;
