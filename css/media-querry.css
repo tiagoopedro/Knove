@@ -265,12 +265,14 @@
 
 
     #fundo-quem-somos {
-        background: linear-gradient(to right, #738754, #09372D, #09372D, #09372D, #738754);
+        background: linear-gradient(to bottom, white, var(--cor2), white);
+
     }
 
     #quem-somos {
         flex-flow: row wrap;
         padding: 30px 0 150px;
+
     }
 
     #quem-somos>h1 {
@@ -278,15 +280,17 @@
         margin-right: 30vw;
         font-size: 40px;
         text-indent: 0;
+        color: var(--cor1);
     }
 
     .p-quem-somos {
         font-size: 22px;
+        color: var(--cor1);
     }
 
     #div1 {
-        flex-flow: row nowrap;
-        margin: 50px 0 100px;
+        flex-flow: row wrap;
+        margin: 50px 0 90px;
     }
 
     #div1>#logo-quem-somos {
@@ -298,31 +302,47 @@
         margin-top: 40px;
         width: 505px;
         height: 552px;
-        border-radius: 80px 0;
+        border-radius: 50px 0;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
     }
 
     #div1>p {
-        padding: 30px 0 0 50px;
-        width: 680px;
+        padding: 30px 50px 0 0;
+        width: 450px;
     }
 
     #div2 {
+        display: flex;
         flex-flow: row nowrap;
     }
 
-    #div2>img {
-        display: block;
-        height: 400px;
-        width: 600px;
-        border-radius: 80px 0;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    .caixas-equipe {
+
+        border-radius: 20px;
+        border: 1px solid #E62F24;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
+        margin: 10px 80px 10px 0;
+        height: 300px;
     }
 
-    #div2>p {
-        padding: 35px 50px 0 0;
-        margin-top: 0;
+    .caixas-equipe>h1 {
+        padding: 25px 0;
+        text-indent: 0;
+        text-align: center;
+        color: var(--cor1);
     }
+
+    .caixas-equipe>p {
+        color: var(--cor1);
+        width: 450px;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.4em;
+    }
+
+
+
 
     #h1-servicos-disposicao {
         font-size: 30px;
@@ -331,8 +351,6 @@
         border-bottom: 2px solid var(--cor0);
         min-width: 410px;
     }
-
-
 
     .swiper {
         /*section*/
@@ -534,12 +552,14 @@
        background-repeat: no-repeat;
        background-attachment: fixed;*/
 
-        background: linear-gradient(to bottom, white, var(--cor2),  white);
+        background: linear-gradient(to bottom, white, var(--cor2), white);
 
     }
 
     #quem-somos {
         flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
         padding: 30px 0 150px;
 
     }
@@ -576,21 +596,15 @@
     }
 
     #div1>p {
-        padding: 30px 0 0 50px;
+        padding: 30px 50px 0 0;
         width: 450px;
     }
 
-    #div2 {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
     .caixas-equipe {
-        background-color: var(--cor0);
         border-radius: 20px;
-        border: 2px solid #E62F24;
+        border: 1px solid #E62F24;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
-        margin: 10px 80px 10px 0;
+        margin: 10px 0;
         height: 300px;
     }
 
@@ -719,7 +733,7 @@
         padding-bottom: 0;
         border-bottom: 2px solid var(--cor0);
         min-width: 410px;
-        
+
     }
 
     .swiper {
@@ -815,7 +829,7 @@
     }
 
     footer {
-        margin-top: 360px;
+        margin-top: 80px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
