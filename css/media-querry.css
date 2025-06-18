@@ -552,7 +552,10 @@
        background-repeat: no-repeat;
        background-attachment: fixed;*/
 
-        background: linear-gradient(to bottom, white, var(--cor2), white);
+        background-image: url(../imagens/background/a.jpg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 
     }
 
