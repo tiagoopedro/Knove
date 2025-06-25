@@ -24,6 +24,7 @@ body {
     align-items: flex-start;
     color: var(--cor0);
     overflow-x: hidden;
+    background-color: rgba(211, 211, 211, 0.329);
 }
 
 p,

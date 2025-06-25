@@ -546,17 +546,7 @@
 
 
     #fundo-quem-somos {
-        /* background-image: url(../imagens/background/13.jpg);
-       background-position: top;
-       background-size: cover;
-       background-repeat: no-repeat;
-       background-attachment: fixed;*/
-
-        background-image: url(../imagens/background/a.jpg);
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
+        background-image: linear-gradient(to bottom, white, var(--cor2), var(--cor2), white);
     }
 
     #quem-somos {
@@ -648,6 +638,7 @@
         width: 1000px;
         text-indent: 30px;
         text-align: justify;
+        font-family: "Raleway", sans-serif;
     }
 
 
@@ -680,7 +671,6 @@
     #topicos>div>img {
         background-color: var(--cor0);
         padding: 10px;
-        border: solid 2px var(--cor1);
         border-radius: 45px;
     }
 
@@ -717,15 +707,22 @@
         margin: 10px;
         max-width: 500px;
         padding: 40px 10px;
-        background-color: #E62F24;
+        background-color: var(--cor1);
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
         border-radius: 5px;
+        
     }
 
     #texto>div>h3 {
         margin: 10px;
         color: white;
+        font-family: "Raleway", sans-serif;
     }
+
+       #texto> div> p {
+        font-family: "Quicksand", sans-serif;
+    }
+
 
 
 
@@ -752,6 +749,7 @@
         font-size: 18px;
         height: 80%;
         padding: 10px 0;
+        background-color: var(--cor0);
     }
 
     .servicos-disposicao>img {
