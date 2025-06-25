@@ -21,57 +21,15 @@
     padding: 30px 10px 0;
     margin-bottom: 50px;
     text-indent: 0;
-    border-bottom: 5px outset rgb(226, 230, 30);
+    border-bottom: 5px outset var(--cor1);
 }
 
 #nosso-time>h1,
 h2,
 p {
-    color: white;
+    color: var(--cor1);
 }
 
-.perfil {
-    display: flex;
-    flex-flow: column wrap;
-    width: 350px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.perfil>h2 {
-    text-indent: 0;
-    margin: auto;
-}
-
-.perfil>img {
-    height: 200px;
-    width: 200px;
-    margin: auto;
-    border-radius: 100px;
-}
-
-.perfil:hover {
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), #738754, rgba(255, 255, 255, 0));
-    height: fit-content;
-}
-
-.perfil>img:hover {
-    border: 3px solid white;
-    border-radius: 120px;
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
-    transition: transform 2.0s, border 0.2s;
-    cursor: pointer;
-    height: 240px;
-    width: 240px;
-}
-
-#descricao,
-#d2,
-#d3 {
-    display: none;
-    color: white;
-}
 
 footer {
     margin: 150px 0 80px;

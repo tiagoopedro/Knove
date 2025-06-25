@@ -7,14 +7,6 @@ function mudouTamanho() {
     }
 }
 
-function clickMenu(perfil) { 
-    if (perfil.style.display == 'block') {
-        perfil.style.display = 'none'
-    } 
-    else {
-        perfil.style.display = 'block'
-    } 
-}
 
 
  const debounce = function(func, wait, immediate) {

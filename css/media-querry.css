@@ -19,20 +19,6 @@
         height: 561px;
     }
 
-    #img-reforma-fachada-depois {
-        height: 543px;
-    }
-
-    .projeto-img {
-        width: 410px;
-        height: 500px;
-    }
-
-    .img-autocad {
-        width: 600px;
-        height: 461px;
-        margin-top: 30px;
-    }
 
     .slide-mobile>h1,
     h3 {
@@ -52,22 +38,7 @@
         color: #09372D;
     }
 
-    #slide-mobile-capa>h1 {
-        margin: 80px 0px 0px;
-    }
 
-    #slide-mobile-capa>div>p {
-        color: white;
-        width: 600px;
-        font-weight: 550;
-        font-size: 20px;
-        margin: 50px 0 50px;
-
-    }
-
-    #img-logo-capa-mobile {
-        width: 500px;
-    }
 
 }
 
@@ -141,7 +112,6 @@
     .swiper-historico {
         width: 100vw;
         height: 900px;
-        /*aqui*/
         display: block;
     }
 
@@ -149,32 +119,7 @@
         cursor: grabbing;
     }
 
-    #slide-capa {
-        background-image: url(../imagens/historico\ servico/capa.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        color: white;
-        align-items: flex-start;
-    }
 
-    #slide-capa>h1 {
-        margin-top: 50px;
-        width: 500px;
-        font-size: 48px;
-    }
-
-    .p-historico {
-        color: white;
-        text-indent: 30px;
-        text-align: justify;
-        max-width: 700px;
-        font-weight: bold;
-        font-size: 28px;
-        margin-left: 50px;
-        padding: 20px;
-
-    }
 
     .div-slide-historico {
         text-align: center;
@@ -184,34 +129,12 @@
         justify-content: flex-start;
         align-items: center;
         color: white;
-        background-image: url(../imagens/fundos/fundo-serviços.jpg);
+        background-image: url(../imagens/background/11.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
     }
 
-    .div-slide-historico>h1 {
-        color: white;
-        font-size: 34px;
-        padding-bottom: 10px;
-    }
-
-    .div-slide-historico>h3 {
-        max-width: 1280px;
-        text-indent: 30px;
-        text-align: justify;
-        margin-bottom: 0;
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 1.4em;
-        font-size: 20px;
-    }
-
-    .div-slide-historico>p {
-        color: white;
-    }
 
     .div-img-historico {
         max-width: 1400px;
@@ -220,48 +143,11 @@
         flex-flow: row nowrap;
     }
 
-    .div-img-historico>p {
-        color: white;
-        display: flex;
-        justify-content: flex-end;
-        font-size: 16px;
-        font-weight: 300;
-    }
 
-    .img-historico {
-        display: flex;
-        width: 630px;
-        /*aqui*/
-        height: 512px;
-        /*aqui*/
-        margin: 0 10px 5px;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
-        border-radius: 8px;
-    }
 
-    .img-projeto {
-        width: 725px;
-        /*aqui*/
-        height: 500px;
-        /*aqui*/
-    }
 
-    #legendas {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        max-width: 1320px;
-    }
 
-    #legendas>p {
-        color: white;
-        text-indent: 10px;
-        width: 375px;
-        margin: 0 10px 5px;
-        font-size: 14px;
 
-    }
 
 
     #fundo-quem-somos {
@@ -294,17 +180,13 @@
     }
 
     #div1>#logo-quem-somos {
-        display: none;
-    }
-
-    #div1>img {
-        display: block;
         margin-top: 40px;
         width: 505px;
         height: 552px;
         border-radius: 50px 0;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
     }
+
 
     #div1>p {
         padding: 30px 50px 0 0;
@@ -394,37 +276,6 @@
         margin-top: 50px;
         margin-right: 80vw;
         padding: 0 15px;
-
-    }
-
-    .perfil {
-        padding: 2px;
-        /*aqui*/
-        margin: 100px 0px 0px;
-        /*aqui*/
-        width: 450px;
-        /* width: auto; aqui eu apaguei esse*/
-        color: rgba(235, 29, 29, 0);
-        border-radius: 50px;
-        justify-content: flex-start;
-    }
-
-    .perfil>h2 {
-        margin: 0;
-        /* acrescentei aqui*/
-        text-indent: 30px;
-        /* acrescentei aqui*/
-        padding-left: 0;
-        margin: auto;
-    }
-
-    .perfil>p {
-        font-size: 18px
-    }
-
-    .perfil>img {
-        margin: 0 0 0 25px;
-        margin: auto;
     }
 
 
@@ -516,13 +367,7 @@
 
 
     .swiper-historico {
-        width: 100vw;
         height: 800px;
-        display: block;
-    }
-
-    .swiper-historico:active {
-        cursor: grabbing;
     }
 
 
@@ -545,9 +390,7 @@
 
 
 
-    #fundo-quem-somos {
-        background-image: linear-gradient(to bottom, white, var(--cor2), var(--cor2), white);
-    }
+
 
     #quem-somos {
         flex-flow: row wrap;
@@ -576,10 +419,6 @@
     }
 
     #div1>#logo-quem-somos {
-        display: none;
-    }
-
-    #div1>img {
         display: block;
         margin-top: 40px;
         width: 505px;
@@ -710,7 +549,7 @@
         background-color: var(--cor1);
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
         border-radius: 5px;
-        
+
     }
 
     #texto>div>h3 {
@@ -719,8 +558,9 @@
         font-family: "Raleway", sans-serif;
     }
 
-       #texto> div> p {
+    #texto>div>p {
         font-family: "Quicksand", sans-serif;
+        color: white;
     }
 
 
@@ -731,7 +571,8 @@
         font-size: 30px;
         margin: 50px 0 0 100px;
         padding-bottom: 0;
-        border-bottom: 2px solid var(--cor0);
+        border-bottom: 2px solid var(--cor1);
+        color: var(--cor1);
         min-width: 410px;
 
     }
@@ -800,34 +641,8 @@
         margin-top: 50px;
         margin-right: 80vw;
         padding: 0 15px;
-
     }
 
-    .perfil {
-        padding: 20px;
-        margin: 100px 20px 0px;
-        max-width: 550px;
-        width: auto;
-        color: rgba(235, 29, 29, 0);
-        border-radius: 50px;
-        justify-content: flex-start;
-    }
-
-    .perfil>h2 {
-        margin: 0;
-        /* acrescentei aqui*/
-        text-indent: 30px;
-        /* acrescentei aqui*/
-        padding-left: 0;
-    }
-
-    .perfil>p {
-        font-size: 18px
-    }
-
-    .perfil>img {
-        margin: 0 0 0 25px;
-    }
 
     footer {
         margin-top: 80px;
