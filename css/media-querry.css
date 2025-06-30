@@ -116,7 +116,7 @@
 
 
     .swiper-historico {
-        width: 95vw;
+        width: 100vw;
         height: 850px;
         display: block;
     }
@@ -461,6 +461,11 @@
 }
 
 @media screen and (min-width: 1400px) {
+
+     .posicao-slider {
+        margin-top: 82px;
+        position: static;
+    }
 
 
     .div-slide-historico {
