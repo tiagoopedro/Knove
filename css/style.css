@@ -125,6 +125,118 @@ a {
     padding: 10px 40px 40px;
 }
 
+#knove-servicos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#knove-servicos>h1 {
+    width: 1000px;
+    color: var(--cor1);
+    text-align: center;
+}
+
+#knove-servicos>h3 {
+    color: var(--cor1);
+    width: 1000px;
+    text-indent: 30px;
+    text-align: justify;
+    font-family: "Raleway", sans-serif;
+}
+
+
+#topicos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    max-width: 100vw;
+}
+
+#topicos>div {
+    width: 400px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#topicos>div>p {
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 250px;
+    padding: 0;
+}
+
+#topicos>div>img {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 45px;
+}
+
+#seguranca {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+#icones,
+#texto {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100vw;
+}
+
+#icones>div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 250px;
+    margin: 0 90px;
+}
+
+#icones>div>h1 {
+    padding: 0;
+    text-indent: 0;
+    font-size: 23px;
+}
+
+#texto>div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px;
+    max-width: 380px;
+    padding: 40px 10px;
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
+    border-radius: 5px;
+
+}
+
+#texto>div>h3 {
+    margin: 10px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#texto>div>p {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+
+
 
 #h1-servicos-disposicao {
     border-bottom: 2px solid var(--cor0);
@@ -161,12 +273,12 @@ a {
     cursor: grabbing;
 }
 
-  .servicos-disposicao>img{
-        margin: 2% 2.5%;
-        width: 95%;
-        height: 70%;
-        border-radius: 20px;
-    }
+.servicos-disposicao>img {
+    margin: 2% 2.5%;
+    width: 95%;
+    height: 70%;
+    border-radius: 20px;
+}
 
 .servicos-disposicao>h3 {
     padding: 20px 20px;
@@ -242,5 +354,3 @@ a {
     width: 120px;
     margin: 20px;
 }
-
-
