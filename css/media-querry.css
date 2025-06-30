@@ -8,15 +8,12 @@
 
     .swiper-mobile {
         display: block;
-    }
-
-    .slide-mobile {
-        background-image: url(../imagens/historico\ servico/b.jpg);
+        height: 65vh;
     }
 
     .img-slide-mobile {
-        width: 500px;
-        height: 561px;
+        width: 95vw;
+        height: 62vw;
     }
 
 
@@ -98,18 +95,26 @@
 
     header>#itens>a {
         display: block;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         background-color: white;
         font-size: 18px;
         width: auto;
         text-decoration: none;
+        font-weight: bold;
+        border-radius: 15px;
         padding: 10px;
         margin-right: 5px;
         transition-duration: 0.5s;
+        font-family: "Raleway", sans-serif;
         color: var(--cor1);
     }
 
     #itens>a:hover {
+        background-color: var(--cor0);
         color: white;
+        border-radius: 10px;
     }
 
 
@@ -462,7 +467,7 @@
 
 @media screen and (min-width: 1400px) {
 
-     .posicao-slider {
+    .posicao-slider {
         margin-top: 82px;
         position: static;
     }
