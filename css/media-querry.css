@@ -35,17 +35,25 @@
         color: #09372D;
     }
 
-#topicos {
-    flex-flow: row wrap;
-}
+    #topicos {
+        flex-flow: row wrap;
+    }
 
-#topicos>div>p {
-    font-size: 1.3em;
-}
+    #topicos>div>p {
+        font-size: 1.3em;
+    }
 
-#topicos>div>img {
-    padding: 8px;
-}
+    #topicos>div>img {
+        padding: 8px;
+    }
+
+    /*arrumar daqui*/
+    #icones {
+        display: block;
+        flex-flow: row;
+    }
+
+
 
 
 }
@@ -359,8 +367,6 @@
         font-size: 30px;
         margin: 50px 0 0 100px;
         padding-bottom: 0;
-        border-bottom: 2px solid var(--cor1);
-        color: var(--cor1);
         min-width: 410px;
     }
 
@@ -409,9 +415,6 @@
     #clientes h1 {
         font-size: 30px;
         margin: 0 0 20px 100px;
-        width: 220px;
-        color: var(--cor1);
-        border-color: var(--cor1);
     }
 
     #logos img {
@@ -438,12 +441,17 @@
 
 
     footer {
-        margin-top: 80px;
+        margin: 80px 0;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         font-size: 16px;
         align-items: normal;
+    }
+
+    iframe {
+        margin: 0px 15vw 60px;
+        width: 70vw;
     }
 
     footer>div {

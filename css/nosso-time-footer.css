@@ -6,11 +6,11 @@
     flex-flow: column wrap;
     align-items: center;
     margin: 50px 0 0px 0px;
-    background-image: url(../imagens/fundos/IMG_20210914_144132-scaled.jpg);
+    background-image: url(../imagens/background/a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: top;
+    background-position: left;
 }
 
 #nosso-time>h1 {
@@ -21,23 +21,37 @@
     padding: 30px 10px 0;
     margin-bottom: 50px;
     text-indent: 0;
+    color: var(--cor1);
     border-bottom: 5px outset var(--cor1);
 }
 
-#nosso-time>h1,
-h2,
-p {
-    color: var(--cor1);
+
+.mySwiper-slide-loja {
+    display: block;
+    width: 100vw;
+    height: 800px;
+    margin: 0 3.5vw;
 }
 
+.slide-loja>img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 10px;
+}
 
 footer {
-    margin: 150px 0 80px;
+    margin: 150px 0 10px;
     background: none;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     width: 100vw;
+}
+
+iframe {
+    margin: 120px 10vw 60px;
+    width: 80vw;
 }
 
 #logo-footer {
@@ -57,7 +71,8 @@ footer>a>p {
     color: white;
 }
 
-footer>a>img, footer>div>a>img {
+footer>a>img,
+footer>div>a>img {
     height: 30px;
     width: 30px;
     padding: 0px 3px;
@@ -87,12 +102,13 @@ footer>div {
 
 }
 
-.contato:hover, footer>a>p:hover {
+.contato:hover,
+footer>a>p:hover {
     color: #A8ADB1;
 }
 
 
-   
+
 #Copyright {
     text-align: center;
     width: auto;
