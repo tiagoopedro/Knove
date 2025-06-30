@@ -35,6 +35,17 @@
         color: #09372D;
     }
 
+#topicos {
+    flex-flow: row wrap;
+}
+
+#topicos>div>p {
+    font-size: 1.3em;
+}
+
+#topicos>div>img {
+    padding: 8px;
+}
 
 
 }
@@ -237,7 +248,6 @@
         flex-flow: column;
         justify-content: center;
         align-items: center;
-
     }
 
     #knove-servicos>h1 {

@@ -127,20 +127,21 @@ a {
 
 #knove-servicos {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 #knove-servicos>h1 {
-    width: 1000px;
+    padding: 0 20px;
     color: var(--cor1);
     text-align: center;
 }
 
 #knove-servicos>h3 {
     color: var(--cor1);
-    width: 1000px;
+    padding: 20px;
     text-indent: 30px;
     text-align: justify;
     font-family: "Raleway", sans-serif;
@@ -149,7 +150,7 @@ a {
 
 #topicos {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
@@ -157,7 +158,7 @@ a {
 }
 
 #topicos>div {
-    width: 400px;
+    width: 350px;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -168,14 +169,14 @@ a {
 #topicos>div>p {
     color: var(--cor1);
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.1em;
     width: 250px;
     padding: 0;
 }
 
 #topicos>div>img {
     background-color: var(--cor0);
-    padding: 10px;
+    padding: 6px;
     border-radius: 45px;
 }
 
