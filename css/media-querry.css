@@ -47,13 +47,69 @@
         padding: 8px;
     }
 
-    /*arrumar daqui*/
-    #icones {
-        display: block;
-        flex-flow: row;
+    #knove-servicos>h1 {
+        font-size: 32px;
     }
 
 
+    #icones,
+    #texto {
+        display: block;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0;
+        width: 100vw
+    }
+
+    #icones>div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 250px;
+        margin: 0;
+    }
+
+    #icones>div>h1 {
+        padding: 0;
+        text-indent: 0;
+        font-size: 20px;
+    }
+
+    #texto>div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 5px;
+        max-width: 380px;
+        height: 250px;
+        padding: 30px 10px;
+        background-color: var(--cor1);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
+        border-radius: 5px;
+    }
+
+    #texto>div>h3 {
+        margin: 10px 0;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+    }
+
+    #texto>div>p {
+        font-family: "Quicksand", sans-serif;
+        color: white;
+        padding: 0 2px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+
+    .mySwiper-slide-loja {
+        height: 800px;
+        margin: 0 20vw;
+    }
 
 
 }
@@ -313,52 +369,27 @@
         margin: 100px auto;
     }
 
-    #icones,
-    #texto {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0;
-        width: 100vw;
-    }
 
     #icones>div {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        width: 250px;
         margin: 0 90px;
     }
 
     #icones>div>h1 {
-        padding: 0;
-        text-indent: 0;
         font-size: 23px;
     }
 
     #texto>div {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
         margin: 10px;
-        max-width: 380px;
         padding: 40px 10px;
-        background-color: var(--cor1);
-        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
-        border-radius: 5px;
-
+        height: auto;
     }
 
     #texto>div>h3 {
-        margin: 10px;
-        color: white;
-        font-family: "Raleway", sans-serif;
+        font-size: 18px;
     }
 
     #texto>div>p {
-        font-family: "Quicksand", sans-serif;
-        color: white;
+        font-size: 18px;
     }
 
 
@@ -465,12 +496,7 @@
         height: 800px;
     }
 
-    .slide-loja>img {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        border-radius: 10px;
-    }
+ 
 
     #Copyright {
         margin-bottom: 0;

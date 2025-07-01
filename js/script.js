@@ -1,13 +1,4 @@
 
-function mudouTamanho() { 
-    if (window.innerWidth >= 992) {
-        itens.style.display = 'block'
-    } else {
-        itens.style.display = 'none'
-    }
-}
-
-
 
  const debounce = function(func, wait, immediate) {
     let timeout;
