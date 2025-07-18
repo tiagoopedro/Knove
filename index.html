@@ -16,7 +16,7 @@
     <title>KnoveSeg</title>
 </head>
 
-<body >
+<body>
 
     <header id="menu">
 
@@ -55,16 +55,16 @@
 
 
                             <div class="swiper-slide slide-mobile">
-                                
+
                                 <img class="img-slide-mobile" src="imagens/slide-inicial/1.png" alt="img1">
-                               
+
                             </div>
 
                             <div class="swiper-slide slide-mobile">
-                            
+
                                 <img class="img-slide-mobile" id="img-reforma-fachada-depois"
                                     src="imagens/slide-inicial/2.png" alt="img2">
-                            
+
                             </div>
 
                         </div>
@@ -91,17 +91,14 @@
                 <img class="div-img-historico" src="imagens/slide-inicial/2.png" alt="img2">
 
             </div>
-
-
         </div>
-
-
-    </div>
-    <!-- <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div> -->
-    <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
+    </div>
     </div>
 
+    
     <div id="knove-servicos">
         <h1>NOSSO COMPROMISSO É A SUA SEGURANÇA</h1>
         <h3>Estamos prontos para prover Soluções de Segurança contribuindo para uma sociedade mais segura, tranquila e
@@ -187,7 +184,7 @@
     </div>
 
 
-   <!-- <section id="fundo-quem-somos">
+    <!-- <section id="fundo-quem-somos">
         <div id="quem-somos">
             <h1>NOSSA EQUIPE</h1>
             <div id="div1">
@@ -224,7 +221,7 @@
 
 
     <h1 id="h1-servicos-disposicao">SERVIÇOS A DISPOSIÇÃO</h1>
-    <section class="swiper mySwiper">
+    <section class="swiper mySwiper-servicos">
         <div class="swiper-wrapper">
             <div class="swiper-slide servicos-disposicao">
                 <img src="imagens/serviço/CFTV.png" alt="">
@@ -292,34 +289,41 @@
     <div id="nosso-time">
         <h1>LOJA FÍSICA</h1>
 
-        <div class="swiper-historico mySwiper-slide-loja" id="swiper-historico" data-anime="up">
+        <div class="mySwiper-slide-loja swiper-historico swiper-loja " data-anime="up"> <!--
+            problema todo ta na versao 2000px
+            se apagar swipr-loja funciona no 1500px mas a mesma situacao no simular nao funciona, ja nas telas menores funciona com o swiper loja ou sem, porem na simulacao do celular o slide está desaparecendo se remover o swiper-loja
+            
+            ohar essas configuraçoes no css *****
+            criar um novo html com o slide css e script para testar
+            ideal seria funcionar sem o swiper historico
+            js ta tudo ok-->
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide div-slide-historico slide-loja"" style="background: none;">
-                    <img  src="imagens/loja/6.jpeg" alt="img1" >
+                <div class="swiper-slide slide-loja"" style=" background: none;">
+                    <img src="imagens/loja/6.jpeg" alt="img1">
                 </div>
 
-                <div class="swiper-slide div-slide-historico slide-loja"" style="background: none;">
-                    <img  src="imagens/loja/1.jpeg" alt="img1" >
+                <div class="swiper-slide slide-loja"" style=" background: none;">
+                    <img src="imagens/loja/1.jpeg" alt="img1">
                 </div>
 
-                <div class="swiper-slide div-slide-historico slide-loja"" style="background: none;">
-                    <img  src="imagens/loja/2.jpeg" alt="img1" >
-                </div>
-
-
-                <div class="swiper-slide div-slide-historico slide-loja"" style="background: none;">
-                    <img  src="imagens/loja/3.jpeg" alt="img1" >
+                <div class="swiper-slide slide-loja"" style=" background: none;">
+                    <img src="imagens/loja/2.jpeg" alt="img1">
                 </div>
 
 
-                <div class="swiper-slide div-slide-historico slide-loja"" style="background: none;">
-                    <img  src="imagens/loja/4.jpeg" alt="img1" >
+                <div class="swiper-slide slide-loja"" style=" background: none;">
+                    <img src="imagens/loja/3.jpeg" alt="img1">
                 </div>
 
 
-                <div class="swiper-slide div-slide-historico slide-loja"" style="background: none;">
-                    <img  src="imagens/loja/5.jpeg" alt="img1" >
+                <div class="swiper-slide slide-loja"" style=" background: none;">
+                    <img src="imagens/loja/4.jpeg" alt="img1">
+                </div>
+
+
+                <div class="swiper-slide slide-loja"" style=" background: none;">
+                    <img src="imagens/loja/5.jpeg" alt="img1">
                 </div>
             </div>
 
@@ -328,7 +332,7 @@
 
         <footer data-anime="nosso-time">
 
-            <iframe 
+            <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.76695435255502!2d-35.97884975873015!3d-8.27577663516342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98bc3e39006a9%3A0x8e350c8dfa2add85!2sKnoveseg%20Solu%C3%A7%C3%B5es%20em%20Sistemas!5e0!3m2!1spt-BR!2sbr!4v1748986006182!5m2!1spt-BR!2sbr"
                 width="600px" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -1,14 +1,38 @@
-var swiper = new Swiper(".mySwiper-slide-historico", {
+
+
+
+// Swiper mobile
+var swiperMobile = new Swiper(".mySwiper-slide-mobile", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-mobile",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-mobile",
+    prevEl: ".swiper-button-prev-mobile",
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
+
+
+// Swiper do slide histórico
+var swiperHistorico = new Swiper(".mySwiper-slide-historico", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination-historico",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-historico",
+    prevEl: ".swiper-button-prev-historico",
   },
   autoplay: {
     delay: 5000,
@@ -18,102 +42,123 @@ var swiper = new Swiper(".mySwiper-slide-historico", {
 
 
 
-function slideLoja() {
+// Swiper serviço com responsividade
+let swiperServicoInstance;
 
-  function padraoSlideLoja(numerodeSlides) {
-    var swiper = new Swiper(".mySwiper-slide-loja", {
+function slideServico() {
+  function padraoSlideServico(numerodeSlides) {
+    if (swiperServicoInstance) {
+      swiperServicoInstance.destroy(true, true);
+    }
+
+    swiperServicoInstance = new Swiper(".mySwiper-servicos", {
       slidesPerView: numerodeSlides,
       spaceBetween: 40,
+       breakpoints: { //breakpoint para a parte que simula no chrome
+       100: {
+          slidesPerView: 1
+        },
+        992: {
+          slidesPerView: 2
+        },
+        2000: {
+          slidesPerView: 3
+        }
+      },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-servico",
+        prevEl: ".swiper-button-prev-servico",
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-servico",
+        clickable: true,
+      },
+    });
+  }
+
+  const largura = window.innerWidth;
+
+  if (largura >= 2000) {
+    padraoSlideServico(3);
+  } else if (largura >= 992) {
+    padraoSlideServico(2);
+  } else {
+    padraoSlideServico(1);
+  }
+}
+
+slideServico();
+
+
+
+
+// Swiper do slide loja com responsividade
+
+let swiperLojaInstance;
+
+function slideLoja() {
+  function padraoSlideLoja(numerodeSlides) {
+    // Destroi o swiper anterior, se existir
+    if (swiperLojaInstance) {
+      swiperLojaInstance.destroy(true, true);
+    }
+
+    swiperLojaInstance = new Swiper(".mySwiper-slide-loja", {
+      slidesPerView: numerodeSlides,
+      spaceBetween: 40,
+       breakpoints: {
+       100: {
+          slidesPerView: 1
+        },
+        992: {
+          slidesPerView: 2
+        },
+        1500: {
+          slidesPerView: 3
+        },
+        1900: {
+          slidesPerView: 4
+        },
+        2000: {
+          slidesPerView: 5
+        }
+      }, 
+      navigation: {
+        nextEl: ".swiper-button-next-loja",
+        prevEl: ".swiper-button-prev-loja",
+      },
+      pagination: {
+        el: ".swiper-pagination-loja",
         clickable: true,
       },
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
       },
-    })
+    });
   }
 
-  if (window.innerWidth >= 2000) {
-    padraoSlideLoja(5)
-  }
-  else if (window.innerWidth >= 1900) {
-    padraoSlideLoja(4)
-  }
-  else if (window.innerWidth >= 994 <=993) { //gambiarra corrigir
-    padraoSlideLoja(1)
-  }
-  else if (window.innerWidth >= 1500) {
-    padraoSlideLoja(3)
-  }
+  const largura = window.innerWidth;
 
-  else if (window.innerWidth >= 992) {
-    padraoSlideLoja(2)
-  }
-
-  else {
-    padraoSlideLoja(1)
+  if (largura >= 2000) {
+    padraoSlideLoja(5);
+  } else if (largura >= 1900) {
+    padraoSlideLoja(4);
+  } else if (largura >= 1500) {
+    padraoSlideLoja(3);
+  } else if (largura >= 992) {
+    padraoSlideLoja(2);
+  } else {
+    padraoSlideLoja(1);
   }
 }
+
 slideLoja();
 
-var swiper = new Swiper(".mySwiper-slide-mobile", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-});
 
 
-function slideServico() {
 
-  function padraoSlideServico(numerodeSlides) {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: numerodeSlides,
-      spaceBetween: 40,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    })
-  }
-
-  if (window.innerWidth >= 2000) {
-    padraoSlideServico(3)
-  }
-   else if (window.innerWidth >= 994 <=993) { //gambiarra corrigir
-    padraoSlideServico(1)
-  }
-  else if (window.innerWidth >= 992) {
-    padraoSlideServico(2)
-  }
-  else {
-    padraoSlideServico(1)
-  }
-}
-slideServico()
-
-
+//menu tem que ficar no final
 var menuButton = document.querySelector('.menu-button');
 var openMenu = function () {
   swiper.slidePrev();
@@ -144,6 +189,16 @@ var swiper = new Swiper('.burguer', {
 });
 
 
+let resizeTimeout;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    slideServico();
+    slideLoja();
+  }, 300);
+});
 
-
-
+window.addEventListener("load", () => {
+  slideServico();
+  slideLoja();
+});
