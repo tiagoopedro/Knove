@@ -33,6 +33,7 @@
     height: 140vw;
     max-height: 800px;
     margin: 0 3.5vw;
+    overflow-x: hidden;
 }
 
 .slide-loja>img {
