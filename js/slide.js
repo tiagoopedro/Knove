@@ -97,17 +97,17 @@ slideServico();
 let swiperLojaInstance;
 
 function slideLoja() {
-  function padraoSlideLoja(numerodeSlides) {
+  
     // Destroi o swiper anterior, se existir
     if (swiperLojaInstance) {
       swiperLojaInstance.destroy(true, true);
     }
 
     swiperLojaInstance = new Swiper(".mySwiper-slide-loja", {
-      slidesPerView: numerodeSlides,
+      slidesPerView: "auto", // Deixa o Swiper gerenciar isso via breakpoints
       spaceBetween: 40,
-       breakpoints: {
-       100: {
+      breakpoints: {
+        100: {
           slidesPerView: 1
         },
         992: {
@@ -122,7 +122,7 @@ function slideLoja() {
         2000: {
           slidesPerView: 5
         }
-      }, 
+      },
       navigation: {
         nextEl: ".swiper-button-next-loja",
         prevEl: ".swiper-button-prev-loja",
@@ -135,22 +135,7 @@ function slideLoja() {
         delay: 4000,
         disableOnInteraction: false,
       },
-    });
-  }
-
-  const largura = window.innerWidth;
-
-  if (largura >= 2000) {
-    padraoSlideLoja(5);
-  } else if (largura >= 1900) {
-    padraoSlideLoja(4);
-  } else if (largura >= 1500) {
-    padraoSlideLoja(3);
-  } else if (largura >= 992) {
-    padraoSlideLoja(2);
-  } else {
-    padraoSlideLoja(1);
-  }
+    });  
 }
 
 slideLoja();
